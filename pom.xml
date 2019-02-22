@@ -27,15 +27,13 @@
   </build>
    <distributionManagement>
         <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://172.31.2.113:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://172.31.2.113:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
+    <id>maven2</id>
+    <url>http://35.227.113.12:8081/nexus/content/repositories/maven2</url>
+  </repository>>
+       <snapshotRepository>
+    <id>maven</id>
+    <url>http://35.227.113.12:8081/nexus/content/repositories/maven</url>
+  </snapshotRepository>
     </distributionManagement>
   <dependencies>
   	<dependency>
